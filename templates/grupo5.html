@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <!-- PY-SCRIPT-->
+<!--
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css">
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+-->
+    <!-- H T M X-->  
+    <script type="text/javascript" src="c:/utils/htmx.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@1.8.4"></script>
+    <!-- S E M A N T I C - U I -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+
+
+<style type="text/css">
+  
+  .inv{color:blue; font-weight: 700}
+  .pla{color:blueviolet; font-weight: 700}
+  .des{color:darkcyan; font-weight: 700}
+  .rev{color:cornflowerblue; font-weight: 700}
+  .com{color:cyan; font-weight: 700}
+
+  .subti{color:blue;}
+
+  .grupo5{font-size: 1.75em;}
+  .icon{font-size: 2.55em;}
+</style>
+
+</head>
+<body>
+
+<!--
+<py-env>
+- asyncio
+- bokeh
+- panel==0.13.1a2
+</py-env>
+-->
+
+<!-- INICIO MENU PRINCIPAL (SEMANAS) -->
+<div class="ui container">
+  <div class="ui menu">
+    <a class="active item" href="/grupo5">GRUPO-5</a>
+    <a class="item" hx-target='#shower' hx-swap='innerHTML' hx-get="/grupo5?option=semana1">Semana 1</a>
+    <a class="item" hx-target='#shower' hx-swap='innerHTML' hx-get="/grupo5?option=semana2">Semana 2</a>
+    <a class="item" hx-target='#shower' hx-swap='innerHTML' hx-get="/grupo5?option=semana3">Semana 3</a>
+    <a class="item" hx-target='#shower' hx-swap='innerHTML' hx-get="/grupo5?option=semana4">Semana 4</a>
+    </div>
+  </div>
+</div>  <!-- FIN MENU PRINCIPAL -->
+
+
+<div class="ui hidden divider"></div>
+<div class="ui hidden divider"></div>
+<div class="ui hidden divider"></div>
+<div class="ui hidden divider"></div>
+
+
+<h2 class="ui header" style="margin-left:50px;">
+  <img class="ui image grupo5" src="https://raw.githubusercontent.com/bparedes21/Proyecto-Grupal/main/images/grupo5.png">
+  <div class="content">Equipo HENRY </div>
+</h2>
+
+
+<div class="ui container fluid" id="shower" >
+  
+  <div class="ui five column grid" style="margin-left:40px;"><!--INICIO IMAGENES "GRUPO5"-->
+    
+    <div class="column">
+
+        <div class="ui card">
+          <div class="image">
+            <img src="https://raw.githubusercontent.com/bparedes21/Proyecto-Grupal/main/images/Alex-Argentina.jpg">
+          </div>
+          <div class="content">
+            <a class="header">Alex</a>
+            <div class="meta">
+              <span class="date">DS - 04</span>
+            </div>
+            <div class="description">Data Analytics </div>
+          </div>
+          <div class="extra content">
+            <a><i class="user icon"></i> 22 Amigos </a>
+          </div>
+        </div>
+
+    </div><!-- FIN LUCIANO -->
+
+    <div class="column">
+
+        <div class="ui card">
+          <div class="image">
+            <img src="https://raw.githubusercontent.com/bparedes21/Proyecto-Grupal/main/images/Luciano.jpg">
+          </div>
+          <div class="content">
+            <a class="header">Luciano</a>
+            <div class="meta">
+              <span class="date">DS - 04</span>
+            </div>
+            <div class="description">Data Engineering </div>
+          </div>
+          <div class="extra content">
+            <a><i class="user icon"></i> 22 Amigos </a>
+          </div>
+        </div>
+
+    </div><!-- FIN LUCIANO -->
+
+    
+    <div class="column">
+
+        <div class="ui card">
+          <div class="image">
+            <img src="https://raw.githubusercontent.com/bparedes21/Proyecto-Grupal/main/images/sebastian-argentina.jpg">
+          </div>
+          <div class="content">
+            <a class="header">Sebastián</a>
+            <div class="meta">
+              <span class="date">DS - 04</span>
+            </div>
+            <div class="description">Machine Learning. </div>
+          </div>
+          <div class="extra content">
+            <a><i class="user icon"></i> 22 Amigos </a>
+          </div>
+        </div>
+
+    </div><!-- FIN LUCIANO -->
+
+
+    <div class="column">
+
+        <div class="ui card">
+          <div class="image">
+            <img src="https://raw.githubusercontent.com/bparedes21/Proyecto-Grupal/main/images/Alejandro-Colombia.jpg">
+          </div>
+          <div class="content">
+            <a class="header">Alejandro</a>
+            <div class="meta">
+              <span class="date">DS - 04</span>
+            </div>
+            <div class="description">Data Analytics</div>
+          </div>
+          <div class="extra content">
+            <a><i class="user icon"></i> 22 Amigos </a>
+          </div>
+        </div>
+
+    </div><!-- FIN LUCIANO -->
+
+    
+
+    <div class="column">
+
+        <div class="ui card">
+          <div class="image">
+            <img src="https://raw.githubusercontent.com/bparedes21/Proyecto-Grupal/main/images/ProfeDuilio.png">
+          </div>
+          <div class="content">
+            <a class="header">Duilio</a>
+            <div class="meta">
+              <span class="date">DS - 03</span>
+            </div>
+            <div class="description">Data Engineering. </div>
+          </div>
+          <div class="extra content">
+            <a><i class="user icon"></i> 22 Amigos </a>
+          </div>
+        </div>
+
+    </div><!-- FIN LUCIANO -->
+
+<!--
+<div id="web" style="border:1px solid black; height:160px;width:180px"></div>
+-->
+</div>
+
+<!--
+<py-script output="web">
+"""import asyncio
+import panel as pn
+pn.extension()
+from panel import pane
+from panel.io.pyodide import show
+from bokeh.models import widgets
+
+video_stream2 = pn.widgets.VideoStream(name='Video Stream')
+show(video_stream2, 'web')"""
+</py-script>    
+-->
+
+<script type="text/javascript">
+    $('#mensaje1').click(function(){
+    $('#modal1').modal('show')
+;})
+
+    $('#mensaje2').click(function(){
+    $('#modal2').modal('show')
+;})
+
+    $('#mensaje3').click(function(){
+    $('#modal3').modal('show')
+;})
+
+    $('#mensaje4').click(function(){
+    $('#modal4').modal('show')
+;})
+
+    $('#mensaje5').click(function(){
+    $('#modal5').modal('show')
+;})    
+</script>
+
+
+</body>
+</html>

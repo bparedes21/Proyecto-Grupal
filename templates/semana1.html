@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+        <!-- PY-SCRIPT-->
+<!--
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css">
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+-->
+
+    <!-- H T M X-->  
+    <script type="text/javascript" src="c:/utils/htmx.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@1.8.4"></script>
+    <!-- S E M A N T I C - U I -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+
+
+</head>
+<body>
+
+
+<div class="ui sidebar inverted vertical menu">
+    <a class="item" hx-target='#show-semana1' hx-swap='innerHTML' hx-get='/grupo5?option=item1-sem1'>Introducción                                </a>
+    <a class="item" hx-target='#show-semana1' hx-swap='innerHTML' hx-get='/grupo5?option=item2-sem1'>Inversión Inmobiliaria:<br> <span style="color:orange;">dónde invertir?</span>     </a>
+    <a class="item" hx-target='#show-semana1' hx-swap='innerHTML' hx-get='/grupo5?option=item3-sem1'>Objetivos planteados                        </a>
+    <a class="item" hx-target='#show-semana1' hx-swap='innerHTML' hx-get='/grupo5?option=item4-sem1'>Alcances                                    </a>
+    <a class="item" hx-target='#show-semana1' hx-swap='innerHTML' hx-get='/grupo5?option=item5-sem1'>Repositorio - Proyecto                      </a>
+    <a class="item" hx-target='#show-semana1' hx-swap='innerHTML' hx-get='/grupo5?option=item6-sem1'>Stack Tecnológico                           </a>
+</div>
+
+<div class="pusher" id="show-semana1">
+    <!-- Site content !-->
+    
+
+
+<!-- CAMARA WEB 
+<h4>Cámara Web</h4>
+<div class="ui container" id="camara" style="width:20%; border: 1px solid black; height: 180px;">
+</div>
+-->
+
+</div>
+
+
+<!--
+<py-script output="camara">
+"""import asyncio
+import panel as pn
+pn.extension()
+from panel import pane
+from panel.io.pyodide import show
+from bokeh.models import widgets
+
+video_stream = pn.widgets.VideoStream(name='Video Stream')
+async show(video_stream, 'camara')"""
+</py-script>    
+-->
+
+<script>
+  
+  $('.ui.sidebar')
+  .sidebar('toggle')
+;
+
+</script>
+
+
+</body>
+</html>
