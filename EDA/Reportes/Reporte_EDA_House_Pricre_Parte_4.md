@@ -1,0 +1,3 @@
+Del análisis exploratorio realizado se concluye que los ocho archivos presentes en la carpeta presentan una gran cantidad de valores faltantes, se sugiere eliminar todas las variables en las que el porcentaje de los mismos supere el 70% y para el resto aplicar alguna medida de corrección.
+No presentan registros duplicados.
+Outliers: todos los archivos presentan outliers afectando una cantidad cercana al total de las columnas, estos valores no superan los 4 registros por variable.
