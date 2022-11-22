@@ -54,12 +54,13 @@ def cantidad_outliers(dicc_df):
                 size = len(pd.Series(outliers).unique())
 
 
-                print('\n')
-                print(key)
-                print(columna)
-                print('Q1: ',Q1)
-                print('Q3: ',Q3)
-                print('IQR: ',IQR)
-                print('BI: ',BI)
-                print('BS: ',BS)
-                print (f'Hay {size} valores atípicos en la variable {columna}')
+                if size > 0: 
+                    print('\n')
+                    print(key)
+                    print(columna)
+                    print('Q1: ',Q1)
+                    print('Q3: ',Q3)
+                    print('IQR: ',IQR)
+                    print('BI: ',BI)
+                    print('BS: ',BS)
+                    print (f'Hay {size} valores atípicos en la variable {columna}')
