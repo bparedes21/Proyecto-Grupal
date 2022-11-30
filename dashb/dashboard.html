@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- H T M X-->  
+    <script type="text/javascript" src="c:/utils/htmx.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@1.8.4"></script>
+    <!-- S E M A N T I C - U I -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+
+
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <py-env>
+        - pandas
+        - altair
+    </py-env>
+
+	<title>Dashboar-Ejemplos 💹</title>
+</head>
+<body>
+
+<h2 class="ui header">
+  <!-- <img src="/images/icons/plugin.png"> -->
+  <div class="content">USA <div class="sub header">Factores Macroeconómicos</div>
+  </div>
+</h2>
+<div class="ui container fluid" id="grafica1">
+</div>
+<py-script output="grafica1">
+
+import pandas as pd
+import altair as alt
+from pyodide.http import open_url
+
+#alt.renderers.enable("mimetype")
+
+indices_macro = 'https://raw.githubusercontent.com/bparedes21/Proyecto-Grupal/main/dashb/data/indices_macro_anual.csv'
+df = pd.read_csv(open_url(indices_macro))
+
+GRAFICA=alt.Chart(df).mark_line(point=True, color='red').encode(
+    # x, y, color, shape, size
+    # x='seconds_per_km:Q', quantitative (numerical data)
+    # y='day_of_week:N', nominal (unordered, categorical)
+    # O: ordinal types (rank-ordered)
+    # T: temporal types (date/time)
+    alt.X('Población', title='Indice Poblacional'),
+    alt.Y('year(Fecha):O', title='Año'),
+    tooltip=['year(Fecha)', 'Tasa_desempleo', 'PBI_real']            
+).interactive().properties(
+    width=600,
+    height=900
+)
+
+GRAFICA
+</py-script>	
+
+
+
+</body>
+</html>
