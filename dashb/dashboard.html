@@ -24,23 +24,81 @@
 </head>
 <body>
 
-<h2 class="ui header">
-  <!-- <img src="/images/icons/plugin.png"> -->
-  <div class="content">USA <div class="sub header">Factores Macroeconómicos</div>
+<div class="ui three column grid">
+  
+  <!-- COLUMNA 1 -->
+  <div class="six wide column">
+    <div class="ui segment">
+      
+    		<h2 class="ui header">
+			  <!-- <img src="/images/icons/plugin.png"> -->
+			  <div class="content">Indice Poblacional <div class="sub header">Serie: 1975 - 2021</div>
+			  </div>
+			</h2>
+			<div class="ui container fluid" id="grafica1">
+			</div>
+
+    </div>
   </div>
-</h2>
-<div class="ui container fluid" id="grafica1">
+  
+
+  <!-- wide COLUMNA 2 -->
+  <div class="five wide column">
+    <div class="ui segment">
+
+
+    		<h2 class="ui header">
+			  <!-- <img src="/images/icons/plugin.png"> -->
+			  <div class="content">Indice Poblacional + Tasa-Desempleo + PBI-Real <div class="sub header">Serie: 2012 - 2017</div>
+			  </div>
+			</h2>
+			<div class="ui container fluid" id="grafica2">
+			</div>
+
+
+
+    </div>
+  </div>
+  
+
+  <!-- COLUMNA 3 -->
+  <div class="five wide column">
+    <div class="ui segment">
+
+
+    		<h2 class="ui header">
+			  <!-- <img src="/images/icons/plugin.png"> -->
+			  <div class="content">Indice Precio Casas + Tasa-Hipotecaria + IPC <div class="sub header">Serie: 2012 - 2017</div>
+			  </div>
+			</h2>
+			<div class="ui container fluid" id="grafica3">
+			</div>
+
+
+      
+    </div>
+  </div>
+
+
+
 </div>
+
+
+
+
+
 <py-script output="grafica1">
 
 import pandas as pd
 import altair as alt
 from pyodide.http import open_url
 
-#alt.renderers.enable("mimetype")
+alt.renderers.set_embed_options(theme='dark')
 
 indices_macro = 'https://raw.githubusercontent.com/bparedes21/Proyecto-Grupal/main/dashb/data/indices_macro_anual.csv'
 df = pd.read_csv(open_url(indices_macro))
+df['Fecha'] = pd.to_datetime(df['Fecha'])
+df=df[(df['Fecha']>='2000') & (df['Fecha']<='2017')]
 
 GRAFICA=alt.Chart(df).mark_line(point=True, color='red').encode(
     # x, y, color, shape, size
@@ -48,17 +106,79 @@ GRAFICA=alt.Chart(df).mark_line(point=True, color='red').encode(
     # y='day_of_week:N', nominal (unordered, categorical)
     # O: ordinal types (rank-ordered)
     # T: temporal types (date/time)
-    alt.X('Población', title='Indice Poblacional'),
-    alt.Y('year(Fecha):O', title='Año'),
+    alt.Y('Población', title='Indice Poblacional'),
+    alt.X('year(Fecha):O', title='Año'),
     tooltip=['year(Fecha)', 'Tasa_desempleo', 'PBI_real']            
 ).interactive().properties(
     width=600,
-    height=900
+    height=600
 )
 
 GRAFICA
 </py-script>	
 
+
+<py-script output="grafica2">
+
+import pandas as pd
+import altair as alt
+from pyodide.http import open_url
+
+alt.renderers.set_embed_options(theme='dark')
+
+indices_macro = 'https://raw.githubusercontent.com/bparedes21/Proyecto-Grupal/main/dashb/data/indices_macro_anual.csv'
+df = pd.read_csv(open_url(indices_macro))
+df['Fecha'] = pd.to_datetime(df['Fecha'])
+df=df[(df['Fecha']>='2012') & (df['Fecha']<='2017')]
+
+GRAFICA2=alt.Chart(df).mark_line(point=True, color='red').encode(
+    # x, y, color, shape, size
+    # x='seconds_per_km:Q', quantitative (numerical data)
+    # y='day_of_week:N', nominal (unordered, categorical)
+    # O: ordinal types (rank-ordered)
+    # T: temporal types (date/time)
+    alt.Y('Población', title='Indice Poblacional'),
+    alt.X('year(Fecha):O', title='Año'),
+    tooltip=['year(Fecha)', 'Tasa_desempleo', 'PBI_real']            
+).interactive().properties(
+    width=600,
+    height=600
+)
+
+GRAFICA2
+
+</py-script>
+
+
+<py-script output="grafica3">
+
+import pandas as pd
+import altair as alt
+from pyodide.http import open_url
+
+alt.renderers.set_embed_options(theme='dark')
+
+indices_macro = 'https://raw.githubusercontent.com/bparedes21/Proyecto-Grupal/main/dashb/data/indices_macro_anual.csv'
+df = pd.read_csv(open_url(indices_macro))
+df['Fecha'] = pd.to_datetime(df['Fecha'])
+df=df[(df['Fecha']>='2012') & (df['Fecha']<='2017')]
+
+GRAFICA3=alt.Chart(df).mark_bar(point=True, color='red').encode(
+    # x, y, color, shape, size
+    # x='seconds_per_km:Q', quantitative (numerical data)
+    # y='day_of_week:N', nominal (unordered, categorical)
+    # O: ordinal types (rank-ordered)
+    # T: temporal types (date/time)
+    alt.Y('Indice_precios_casas', title='Indice Precio - Casas'),
+    alt.X('year(Fecha):O', title='Año'),
+    tooltip=['year(Fecha)', 'Tasa_hipotecaria', 'Indice_precios_consumidor']            
+).interactive().properties(
+    width=600,
+    height=600
+)
+
+GRAFICA3
+</py-script>
 
 
 </body>
