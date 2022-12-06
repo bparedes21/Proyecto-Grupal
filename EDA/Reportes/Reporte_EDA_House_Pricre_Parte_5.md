@@ -1,3 +1,0 @@
-Del análisis exploratorio realizado se puede concluir que los ocho archivos presentes en la carpeta tienen una distribución similar respecto a valores faltantes, ya que los presentan en cantidad de columnas similares y en ningún caso supera el 15% de los registros por variable, por lo tanto se espera que sean imputados.
-No presentan registros duplicados.
-Outliers: nos encontramos con una gran cantidad de columnas con outliers con un máximo de 4 valores por variable, se deberá proceder a investigar a que se deben.

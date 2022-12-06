@@ -1,3 +1,0 @@
-Del análisis exploratorio realizado se puede concluir que los dos archivos presentes en la carpeta tienen valores faltantes que podrán ser trabajados por medio de imputacion ya que no estan presentes en porcentajos altos, es estos casos no superan el 25%. 
-Se registra que no hay duplicados.
-Outliers: en general todas las columnas contienen una cantidad muy baja de outliers aproximadamente de 3 valores, se deberá analizar que es lo que indican o si son errores.

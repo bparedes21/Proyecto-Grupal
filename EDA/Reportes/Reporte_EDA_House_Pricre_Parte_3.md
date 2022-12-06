@@ -1,3 +1,0 @@
-Se puede ver que los dataset DaysOnZillow_City y Sale_Prices_City presentan valores faltantes en porcentajes muy altos, mientras que Sale_Prices_State y DaysOnZillow_State en general presentan porcentajes bajos, se recomienda eliminar las variables con valores faltantes superior al 70% y en las demás aplicar alguna medida para imputarlos.
-No se presentan regustros duplicados.
-Outliers: los archivos presentan grandes cantidades de outliers, superando los 100 en algunas varibales, se deberá analizar su motivo.
