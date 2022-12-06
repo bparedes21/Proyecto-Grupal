@@ -1,0 +1,23 @@
+Contamos con datasets provenientes de Zillow, una de las plataformas del mercado inmobiliario
+de USA más importantes, con lo que nos aseguramos que los datos son confiables y representativos
+del problema.
+
+Estos datasets están presentados en carpetas segun las temáticas que comprenden. En los notebooks
+sobre reportes generales se analiza de manera global cuales son los problemas que contiene cada carpeta.
+
+Se determino que los archivos contenidos en las carpetas Zillow House Price Data y
+Zillow Rent Index no presentan información relevante, ya que lo que aportan está contenido
+en los archivos time series de la carpeta Zillow Economics Data, por lo que no será utilizados.
+
+
+Recomendaciones:
+
+- Eliminar columnas con:
+	 valores nulos >= 70%
+
+- Aplicar filtro por RegionName y completar con una medida de tendencia central las columnas que presenten
+	 0% < valores nulos < 70%
+		
+	Con esto se busca que al reemplazar los valores faltantes el valor imputado se lo más representativo
+	posible de la zona.
+
