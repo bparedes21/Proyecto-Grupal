@@ -49,11 +49,11 @@
 ## About
 Buscar indicadores que determinen, dada información de años anteriores, si se está en una situacióno recesiva
 Encontrar las mejores zonas para invertir en:
-Departamentos
-Casas
-Condominios
-Edificios
-Complejos de casas
+Departamentos,
+Casas,
+Condominios,
+Edificios,
+Complejos de casas.
 </div>
 </br>
 
@@ -96,68 +96,6 @@ Complejos de casas
 !pip install sqlite3
 
 ```
-
-
-<a href="https://github.com/404"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"></a>
-
-## Consultas_SQL
-Se desea saber el top 3 de marcas con mas productos en listados de precios del total de las sucursales. Las que mas productos tienen con precio y marca.
-    
-```
-SELECT p.marca, COUNT(prec.producto_id) as cantidad_por_producto FROM precio as prec
-inner join 
-producto p ON p.producto_id  = prec.producto_id
-WHERE prec.precio >0 and marca <> "SIN MARCA"
-
-GROUP BY  p.marca
-ORDER BY  cantidad_por_producto DESC  
-LIMIT 3
-
-```
-Resultado de la consulta:
-<div align = "center">
-
-| marca | cantidad_por_producto |
-| --- | --- |
-| LOREAL     | 16028|
-| ARCOR     | 14937|
-| PANTENE     | 14482|
-
-</div>
-
-Se desea saber el top 10 de sucursales con mas productos en su listado con marca y cual marca es la que mas comercian.  
-
-```
-SELECT s.banderaDescripcion ,p.marca, COUNT(prec.producto_id) as cantidad_por_producto FROM precio as prec
-inner join 
-producto p ON p.producto_id  = prec.producto_id
-inner join 
-sucursal s ON s.sucursal_id  = prec.sucursal_id 
-WHERE p.marca <> "SIN MARCA" and s.banderaDescripcion <>""
-
-GROUP BY s.banderaDescripcion
-ORDER BY  cantidad_por_producto DESC  
-LIMIT 10
-
-```
-Resultado de la consulta:
-<div align = "center">
-
-| banderaDescripcion | marca | cantidad_por_producto |
-| --- | --- | --- |
-| Hipermercado Carrefour     | KINDER| 169854|
-| La Anonima     | LA ANÓNIMA| 112012|
-| Market     | CRISTAL| 95863|
-| Walmart SuperCenter     | NIVEA| 73800|
-| Vea     | PALADINI| 66656|
-| COTO CICSA     | KINDER| 55972|
-| Changomas     | NIVEA| 49507|
-| Hipermercado Libertad     | RAMOLAC| 48863|
-| Jumbo     | LA PAULINA| 47706|
-| Cooperativa Obrera Limitada de Consumo y Vivienda     | KINDER| 46820|
-
-
-</div>
 
 <a href="https://github.com/404"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"></a>
 
