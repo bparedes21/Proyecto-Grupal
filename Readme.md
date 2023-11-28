@@ -3,9 +3,9 @@
 <a href="https://github.com/404"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"></a>
 
 <div align = "center">
-<img src="/img/houses.png" width="100%">
+<img src="/img/house.jpg" width="100%">
 
-# [Proyecto Data Engineer🧰 ETL, creacion de DB en SQLITE](#)
+# [Proyecto Data Grupal🧰, ETL-Analisis-Prediccion](#)
   
 <a href="https://github.com/404"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"></a>
 
