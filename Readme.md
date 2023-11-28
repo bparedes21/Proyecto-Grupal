@@ -8,7 +8,7 @@
 # [Proyecto Data Grupal🧰, ETL-Analisis-Prediccion](#)
 
 
-<H2> :sunrise_over_mountains: Apreta aca para ir a ver la WEB del proyecto! :statue_of_liberty: </H2>
+<H2> :sunrise_over_mountains: Apreta aca :point_down: para ir a ver la WEB del proyecto! :statue_of_liberty: </H2>
 
 :city_sunrise: [Zillow Economics Data](https://bparedes21.github.io/web_grupal/) - WEB Proyecto grupal
   
