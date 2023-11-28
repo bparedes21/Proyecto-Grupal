@@ -47,19 +47,22 @@
 <div>
 
 ## About
-Extraer y transformar archivos:
+Buscar indicadores que determinen, dada información de años anteriores, si se está en una situacióno recesiva
+Encontrar las mejores zonas para invertir en:
+Departamentos
+Casas
+Condominios
+Edificios
+Complejos de casas
 </div>
 </br>
 
 ## :hammer: Formatos de archivos
-<a href="https://drive.google.com/drive/folders/1gG6ZoL7_mrfMvQv3hc_M5raXvk9S_FXw?usp=sharing">Desde carpera de Drive</a>
+<a href="https://drive.google.com/drive/folders/1Cvt-wa0GALlQ2KHJJfOaDF-53UPK6tJK?usp=share_link
+">Desde carpera de Drive</a>
 
-- `PARQUET`
-- `JSON`
-- `XLSX`
-- `TXT`
 - `CSV`
-
+- `JSON`
 ******************************************************************************
 
 ## :factory: Transformar y cargar
