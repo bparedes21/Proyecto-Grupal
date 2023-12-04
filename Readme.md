@@ -10,6 +10,11 @@
 
 ## Proyecto Data Grupal🧰 - ETL, Análisis y Predicción
 
+
+Este proyecto es el resultado de un esfuerzo grupal, donde la combinación de análisis, transformación de datos y predicciones nos acerca a una comprensión más profunda del mercado inmobiliario.
+
+¡Explora nuestra web para obtener más detalles y resultados! 🏡💼
+
 🌄 **Explora la Web del Proyecto** 🗽: [Zillow Economics Data](https://bparedes21.github.io/web_grupal/)
 
 ******************************************************************************
@@ -65,17 +70,6 @@ Este proyecto se centra en analizar indicadores económicos para determinar si n
 - Puedes acceder a ellos desde la [carpeta de Drive](https://drive.google.com/drive/folders/1Cvt-wa0GALlQ2KHJJfOaDF-53UPK6tJK?usp=share_link).
 
 <a href="https://github.com/404"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"></a>
-
-
-
-
-
-
-
-Este proyecto es el resultado de un esfuerzo grupal, donde la combinación de análisis, transformación de datos y predicciones nos acerca a una comprensión más profunda del mercado inmobiliario.
-
-¡Explora nuestra web para obtener más detalles y resultados! 🏡💼
-
 
 ## Setup
 
