@@ -1,21 +1,31 @@
 
 
 <a href="https://github.com/404"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"></a>
-
 <div align = "center">
-<img src="/img/house.jpg" width="50%">
-
-# [Proyecto Data Grupal🧰, ETL-Analisis-Prediccion](#)
+<img src="/img/house.jpg" width="40%">
   
 <a href="https://github.com/404"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"></a>
 
 
+
+## Proyecto Data Grupal🧰 - ETL, Análisis y Predicción
+
+🌄 **Explora la Web del Proyecto** 🗽: [Zillow Economics Data](https://bparedes21.github.io/web_grupal/)
+
 ******************************************************************************
+</div>
 
-<H2> :sunrise_over_mountains: Apreta aca :point_down: para ir a ver la WEB del proyecto! :statue_of_liberty: </H2>
+### Objetivos del Proyecto 🎯
+- Analizar indicadores económicos para determinar la situación económica.
+- Identificar las mejores zonas de inversión en distintos tipos de propiedades.
+- Realizar un análisis exhaustivo de datos utilizando técnicas de ETL.
+- Desarrollar modelos de predicción para orientar decisiones de inversión.
 
-
-:city_sunrise: [Zillow Economics Data](https://bparedes21.github.io/web_grupal/) - WEB Proyecto grupal
+### Tecnologías Utilizadas 🛠️
+- Python para análisis de datos.
+- Herramientas ETL para limpieza y transformación de datos.
+- Librerías como pandas, matplotlib, statsmodels, sklearn, Prophet y Keras.
+- Uso de formatos de archivos como CSV y JSON.
 
 
 ******************************************************************************
@@ -41,35 +51,43 @@
 <div>
 
 ## About
-Buscar indicadores que determinen, dada información de años anteriores, si se está en una situacióno recesiva
-Encontrar las mejores zonas para invertir en:
-Departamentos,
-Casas,
-Condominios,
-Edificios,
-Complejos de casas.
-</div>
-</br>
 
-## :hammer: Formatos de archivos
-<a href="https://drive.google.com/drive/folders/1Cvt-wa0GALlQ2KHJJfOaDF-53UPK6tJK?usp=share_link
-">Desde carpera de Drive</a>
+### Sobre el Proyecto 🏠
 
-- `CSV`
-- `JSON`
+Este proyecto se centra en analizar indicadores económicos para determinar si nos encontramos en una situación recesiva, utilizando datos de años anteriores. Además, busca identificar las mejores zonas de inversión en diversos tipos de propiedades, incluyendo departamentos, casas, condominios, edificios y complejos de casas.
+
 
 <a href="https://github.com/404"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"></a>
 
+### :hammer: Formatos de archivos
+
+- Archivos disponibles en formato CSV y JSON.
+- Puedes acceder a ellos desde la [carpeta de Drive](https://drive.google.com/drive/folders/1Cvt-wa0GALlQ2KHJJfOaDF-53UPK6tJK?usp=share_link).
+
+<a href="https://github.com/404"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"></a>
+
+
+
+
+
+
+
+Este proyecto es el resultado de un esfuerzo grupal, donde la combinación de análisis, transformación de datos y predicciones nos acerca a una comprensión más profunda del mercado inmobiliario.
+
+¡Explora nuestra web para obtener más detalles y resultados! 🏡💼
+
+
 ## Setup
 
--Configuracion. Lista de librerias utilizadas
+### Configuración y Librerías 🚀
+
+- Configuración del entorno en máquina virtual con Linux server , Docker y Hive.
+- Librerías utilizadas incluyen:
 
 ```js      
 
-!pip install pandas
-!pip install sqlite3
-!Maquina virtual-Linux server
-!Docker
+!pandas
+!sqlite3
 !Hive
 !matplotlib
 !statsmodels 
@@ -77,12 +95,5 @@ Complejos de casas.
 !Prophet
 !keras
 ```
-
-<a href="https://github.com/404"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"></a>
-
-
-
-    
-
 
 			
