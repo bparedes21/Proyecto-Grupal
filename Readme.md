@@ -11,8 +11,8 @@
 
 ## Proyecto Data Grupal🧰 - ETL, Análisis y Predicción
 
-¡Bienvenido a un viaje único en el que la colaboración grupal se fusiona con el poder de los datos para iluminar el fascinante mundo del mercado inmobiliario! Este proyecto, gestado con esfuerzo colectivo, no solo representa un análisis de datos tradicional, sino una odisea de descubrimiento y predicción que transformará tu percepción del sector.
-
+¡Bienvenido a un viaje único en el que la colaboración grupal se fusiona con el poder de los datos para iluminar el fascinante mundo del mercado inmobiliario!Este proyecto, gestado con esfuerzo
+colectivo, cuenta con un análisis de datos tradicional, implica tambien una odisea de descubrimiento y predicción que transformará tu percepción del sector
 ¡Explora nuestra web para obtener más detalles y resultados! 🏡💼
 
 🌄 **Explora la Web del Proyecto** 🗽: [Zillow Economics Data](https://bparedes21.github.io/web_grupal/)
