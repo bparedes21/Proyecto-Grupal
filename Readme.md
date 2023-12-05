@@ -7,15 +7,17 @@
 <a href="https://github.com/404"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"></a>
 
 
+# Navegando las Ondas del Mercado Inmobiliario 🚀🏡
 
 ## Proyecto Data Grupal🧰 - ETL, Análisis y Predicción
 
-
-Este proyecto es el resultado de un esfuerzo grupal, donde la combinación de análisis, transformación de datos y predicciones nos acerca a una comprensión más profunda del mercado inmobiliario.
+¡Bienvenido a un viaje único en el que la colaboración grupal se fusiona con el poder de los datos para iluminar el fascinante mundo del mercado inmobiliario! Este proyecto, gestado con esfuerzo colectivo, no solo representa un análisis de datos tradicional, sino una odisea de descubrimiento y predicción que transformará tu percepción del sector.
 
 ¡Explora nuestra web para obtener más detalles y resultados! 🏡💼
 
 🌄 **Explora la Web del Proyecto** 🗽: [Zillow Economics Data](https://bparedes21.github.io/web_grupal/)
+
+### ¡Este proyecto no es solo una exploración de datos, es una aventura que redefine cómo entendemos y navegamos el complejo universo inmobiliario! 🌌💼
 
 ******************************************************************************
 </div>
